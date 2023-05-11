@@ -10,6 +10,13 @@ git config --global user.name "SmartGit"
 git config --global user.email y.sokur@inbox.ru
 
 git clone https://github.com/soulyvit/SmartGit.git
+Cloning into 'SmartGit'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 9 (delta 2), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (9/9), done.
+Resolving deltas: 100% (2/2), done.
 
 cd C:\Program Files\Git\SmartGit
 bash: cd: too many arguments
@@ -24,3 +31,40 @@ Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
         new file:   README
 
+git branch readme-edits
+git checkout readme-edits
+
+git checkout main
+git merge readme-edits
+
+git checkout main
+git merge readme-edits
+git add README
+git commit README 
+
+git push origin main 
+git pull origin main
+
+git pull origin readme-edits
+git add README
+git commit README
+
+git checkout readme-edits
+git rebase master
+First, rewinding head to replay your work on top of it...
+Applying: added staged command
+git add README
+git rebase --continue
+
+git revert README
+git reset README
+
+git tag -a v1.4 -m "my version 1.4"
+git tag
+v0.1
+v1.3
+
+git stash save "stash message"
+
+git checkout readme-edits
+git cherry-pick README
