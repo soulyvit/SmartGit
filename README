@@ -5,3 +5,22 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/soulyvit/SmartGit.git
 git push -u origin main
+
+git config --global user.name "SmartGit"
+git config --global user.email y.sokur@inbox.ru
+
+git clone https://github.com/soulyvit/SmartGit.git
+
+cd C:\Program Files\Git\SmartGit
+bash: cd: too many arguments
+
+git init
+Reinitialized existing Git repository in C:/Program Files/Git/.git/
+
+git commit README.txt
+On branch master
+No commits yet
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.txt
+
